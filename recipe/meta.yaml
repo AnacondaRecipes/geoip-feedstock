@@ -13,13 +13,13 @@ source:
     - Makefile.vc.patch  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - make        # [unix]
-    - m2-patch    # [win]
     - autoconf    # [unix]
     - automake    # [unix]
     - libtool     # [unix]
